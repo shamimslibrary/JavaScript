@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Card</title>
+    <style>
+        .container{
+            width: 280px;
+            height: 450px;
+            background-color: rgb(213, 230, 230);
+            margin: 100px auto;
+            display: grid;
+            font-family: monospace;
+            border-radius: 30px;
+        }
+        .heading{
+            width: 280px;
+            height: 50px;
+            text-align: center;
+            padding-bottom: 10px;
+            background-color: rgb(208, 230, 222);
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        .bulb{
+            margin: 5px auto;
+        }
+        .btn{
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+        button{
+            font-family: monospace;
+            height: 40px;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Smart Bulb</h2>
+        </div>
+        <div class="bulb">
+            <img id="myImage" src="./image/pic_bulboff.gif" alt="Bulb On Off">
+        </div>
+        <div class="btn">
+            <button onclick="document.getElementById('myImage').src='./image/pic_bulbon.gif'">Turn on</button> <br>
+            <button onclick="document.getElementById('myImage').src='./image/pic_bulboff.gif'">Turn off</button>
+        </div>
+    </div>
+</body>
+</html>
