@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 324px;
+            background-color: #c29090;
+            margin: 50px auto;
+            border-radius: 20px;
+            padding-left: 4px;
+            padding-top: 4px;
+        }
+        #calc{
+            width: 191px;
+            height: 50px;
+            background-color: antiquewhite;
+            margin: auto;
+            font-size: 30px;
+            border-radius: 20px;
+            border: none;
+            
+        }
+        .row{
+            width: 46px;
+            height: 35px;
+            border-radius: 100%;
+            border: none;
+        }
+        .row:hover{
+            background-color: blueviolet;
+        }
+        .equal{
+            width: 196px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+        }
+        .equal:hover{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" name="form">
+            <input type="text" id="calc" name="answer"><br><br>
+
+            <input class="row" type="button" value="7" onclick="form.answer.value += '7'">
+            <input class="row" type="button" value="8" onclick="form.answer.value += '8'">
+            <input class="row" type="button" value="9" onclick="form.answer.value += '9'">
+            <input class="row" type="button" value="+" onclick="form.answer.value += '+'"> <br><br>
+
+            <input class="row" type="button" value="4" onclick="form.answer.value += '4'">
+            <input class="row" type="button" value="5" onclick="form.answer.value += '5'">
+            <input class="row" type="button" value="6" onclick="form.answer.value += '6'">
+            <input class="row" type="button" value="-" onclick="form.answer.value += '-'"> <br><br>
+
+            <input class="row" type="button" value="1" onclick="form.answer.value += '1'">
+            <input class="row" type="button" value="2" onclick="form.answer.value += '2'">
+            <input class="row" type="button" value="3" onclick="form.answer.value += '3'">
+            <input class="row" type="button" value="*" onclick="form.answer.value += '*'"> <br><br>
+
+            <input class="row" type="button" value="AC" onclick="form.answer.value = ''">
+            <input class="row" type="button" value="0" onclick="form.answer.value += '0'">
+            <input class="row" type="button" value="." onclick="form.answer.value += '.'">
+            <input class="row" type="button" value="/" onclick="form.answer.value += '/'"> <br><br>
+            <input class="equal" type="button" value="=" onclick="form.answer.value = eval(form.answer.value)">
+        </form>
+    </div>
+</body>
+</html>
