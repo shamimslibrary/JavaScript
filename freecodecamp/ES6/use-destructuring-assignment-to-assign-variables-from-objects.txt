@@ -1,0 +1,42 @@
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+  
+//const highToday = HIGH_TEMPERATURES.today;
+//const highTomorrow = HIGH_TEMPERATURES.tomorrow;
+
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+
+console.log(highToday);
+
+// Only change code above this line
+
+
+
+const students = {
+    shamim: {
+        bangla: 75,
+        english: 80,
+        math: 95
+    },
+    snigdha: {
+        bangla: 77,
+        english: 85,
+        math: 98
+    },
+    sneha: {
+        bangla: 82,
+        english: 90,
+        math: 99
+    }
+}
+
+const {bangla: snehaBangla, english: snehaEnglish, math: snehaMath} = students.sneha;
+
+console.log(snehaBangla);
+console.log(snehaEnglish);
+console.log(snehaMath);

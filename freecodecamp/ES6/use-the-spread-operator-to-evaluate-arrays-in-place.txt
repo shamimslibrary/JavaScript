@@ -1,0 +1,28 @@
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];  // Change this line
+
+console.log(arr2);
+
+//---------------------------------
+/*
+var arr = [6, 89, 3, 45];
+//var max = Math.max.apply(null, arr);  //ES5
+var max = Math.max(...arr); //ES6
+console.log(max);
+*/
+
+const arr1 = ['Shamim', 'Snigdha', 'Sneha'];
+const arr2 = arr1;
+const arr3 = [...arr1];
+
+// console.log(arr1);
+// console.log(arr1[1]);
+// console.log(arr2);
+// console.log(arr3);
+
+const arr4 = [4,6,3,1,5,2,7,8];
+
+console.log(Math.max(...arr4));
+console.log(Math.min(...arr4));

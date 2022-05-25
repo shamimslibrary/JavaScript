@@ -1,0 +1,27 @@
+const magic = () => {
+  return new Date();
+};
+
+console.log(magic());
+
+function myFunction(){
+    return Date();
+}
+
+const myFunction2 = () => {
+    return Date();
+}
+
+const myFunction3 = () => Date();
+
+const myFunction4 = () => {
+    console.log(Date());
+}
+
+const myFunction5 = () => console.log(Date());
+
+console.log(myFunction());
+console.log(myFunction2());
+console.log(myFunction3());
+myFunction4();
+myFunction5();

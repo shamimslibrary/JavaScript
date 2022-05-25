@@ -1,0 +1,74 @@
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+// Only change code below this line
+/*
+const today = HIGH_TEMPERATURES.today;
+const tomorrow = HIGH_TEMPERATURES.tomorrow;
+*/
+const {today, tomorrow} = HIGH_TEMPERATURES;
+// Only change code above this line
+
+//---------------------------------------------------------
+/*
+const user = { //ES5
+  name: "John Doe",
+  age: 34
+}
+
+//ES5
+//const name = user.name;
+//const age = user.age;
+
+//ES6
+const {name, age} = user;
+
+console.log(name);
+console.log(age);
+*/
+
+
+
+
+const students = {
+    shamim: {
+        bangla: 75,
+        english: 80,
+        math: 95
+    },
+    snigdha: {
+        bangla: 77,
+        english: 85,
+        math: 98
+    },
+    sneha: {
+        bangla: 82,
+        english: 90,
+        math: 99
+    }
+}
+
+// console.log(students);
+// console.log(JSON.stringify(students));
+// console.log(students.sneha.english);
+// console.log(students.sneha);
+/*
+const snehaBangla = students.sneha.bangla;
+const snehaEnglish = students.sneha.english;
+const snehaMath = students.sneha.math;
+*/
+
+const {bangla, english, math} = students.sneha;
+
+console.log(bangla);
+console.log(english);
+console.log(math);
+
+const {bangla: snehaBangla, english: snehaEnglish, math: snehaMath} = students.sneha;
+
+console.log(snehaBangla);
+console.log(snehaEnglish);
+console.log(snehaMath);

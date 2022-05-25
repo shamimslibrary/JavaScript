@@ -1,0 +1,9 @@
+const checkedScope = () => {
+    let i = "Function Scope!";
+    if(true){
+        let i = "Block Scope!";
+        console.log(i);
+    }
+    console.log(i);
+}
+checkedScope();
